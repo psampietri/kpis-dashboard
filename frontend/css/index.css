@@ -1,0 +1,26 @@
+/* --- CSS VARIABLES (THEME) --- */
+:root {
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --background-color: #1a1a1a; /* Dark background */
+  --card-background-color: #242424; /* Slightly lighter card background */
+  --border-color: #3e3e3e;
+  --text-color: #e0e0e0; /* Light text for dark background */
+  --text-secondary-color: #a0a0a0;
+  --primary-color: #4caf50; /* Green for highlights */
+  --error-color: #d32f2f;
+}
+
+/* --- GLOBAL RESET --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- BODY STYLES --- */
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}

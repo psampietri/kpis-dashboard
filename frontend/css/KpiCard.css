@@ -1,0 +1,21 @@
+.kpi-card {
+  background-color: var(--card-background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.kpi-value {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  line-height: 1.2;
+}
+
+.kpi-label {
+  font-size: 1rem;
+  color: var(--text-secondary-color);
+  margin-top: 0.5rem;
+}
