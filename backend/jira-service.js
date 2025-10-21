@@ -127,7 +127,7 @@ async function fetchIssueTree(issueKey) {
 }
 
 async function fetchInitiativeTreesByLabel(label) {
-  const initiativeKeys = await searchWithTokenPagination(`labels = '${label}'`);
+  const initiativeKeys = await searchWithTokenPagination(`project = "APPS" and type = "Initiative" and labels = '${label}' and labels not in ('Out_of_scope') ORDER BY Rank`);
   if (initiativeKeys.length === 0) return [];
 
   let finalTrees = [];
@@ -218,7 +218,7 @@ async function fetchAllDescendantIssues(parentKey, includeTshirtField) {
 }
 
 async function fetchIssuesByLabel(label) {
-  const jql = `labels = '${label}'`;
+  const jql = `project = "APPS" and type = "Initiative" and labels = '${label}' and labels not in ('Out_of_scope')`;
   const fields = ['summary', 'status', 'created'];
   const expand = ['changelog'];
 

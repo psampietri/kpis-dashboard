@@ -8,7 +8,9 @@ const calculations = require('./calculations');
 const app = express();
 const PORT = 7001;
 
-app.use(cors());
+app.use(cors({
+  origin: ['http://localhost:3000', 'http://localhost:5173']
+}));
 
 // The main API endpoint that gathers and processes all data
 app.get('/api/dashboard-data', async (req, res) => {

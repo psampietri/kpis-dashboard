@@ -1,0 +1,20 @@
+// config.js
+
+module.exports = {
+  JIRA_DOMAIN: "YOUR_JIRA_DOMAIN", // ex: vwgoa.atlassian.net
+  JIRA_SESSION_COOKIE: "YOUR_TENANT_SESSION_TOKEN",
+  TSHIRT_FIELD_ID: 'customfield_10048', // DO NOT CHANGE
+  JIRA_LABEL: 'DPS_25.4', // DO NOT CHANGE
+  JIRA_PROJECT: 'APPS', // DO NOT CHANGE
+  SUPPORT_INITIATIVE_KEY: 'APPS-3366', // DO NOT CHANGE
+  JIRA_HIERARCHY_FIELD: "Parent", // DO NOT CHANGE
+  HOURS_PER_BUSINESS_DAY: 8, // DO NOT CHANGE
+  TIME_TRACKING_CONFIG: [
+    { key: 'unplanned', label: '[Unplanned]25.P', title: 'Unplanned Tickets' }, // NOT BEING USED
+    { key: 'planned',   label: '[Planned]25.P',   title: 'Planned Tickets' }, // NOT BEING USED
+    { key: 'carryover', label: '[CarryOver]25.P',  title: 'Carry Over Tickets' } // NOT BEING USED
+  ],
+  JIRA_AGILE_BOARD_ID: '3192', // DO NOT CHANGE
+  TIME_FRAME_START: new Date('2025-07-17T00:00:00.000-03:00'), // NOT BEING USED
+  TIME_FRAME_END: new Date('2025-07-30T23:59:59.999-03:00') // NOT BEING USED
+};
